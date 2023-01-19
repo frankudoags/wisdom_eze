@@ -56,7 +56,7 @@ const Card = ({ title, image, link, button }: Card1Props) => {
             <div className='h-full w-full bg-black opacity-40 group-hover:opacity-10 trans absolute top-0 left-0 -z-10'></div>
             <div className='h-full w-full md:w-[70%] mx-auto p-4 text-[#ffffff] flex flex-col items-center justify-center gap-4 md:gap-12'>
                 <p className='text-lg font-bold'>{title}</p>
-                <a href={link} target='_blank' rel='noreferrer' className='btn-white uppercase'>{button ? button : 'Read More'}</a>
+                <a href={link} target='_blank' rel='noreferrer' className='btn-white uppercase mr-auto'>{button ? button : 'Read More'}</a>
             </div>
         </div>
     )

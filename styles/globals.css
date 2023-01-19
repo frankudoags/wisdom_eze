@@ -34,7 +34,7 @@ body{
   @apply w-full md:w-fit flex items-center justify-center px-12 py-4 text-base font-medium;
 }
 .btn-blue {
-  @apply w-full md:w-fit flex items-center justify-center px-12 py-4 text-base font-medium bg-[#3b6ab6] text-white ;
+  @apply w-full md:w-fit flex items-center justify-center px-10 py-4 text-base font-medium bg-[#3b6ab6] text-white ;
 }
 .btn-blue-submit {
   @apply w-full flex items-center justify-center px-12 py-4 text-base font-medium bg-[#3b6ab6] text-white;

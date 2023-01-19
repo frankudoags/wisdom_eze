@@ -83,10 +83,11 @@ export default function Navbar() {
                                     <Link href="/" className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         About Wisdom
                                     </Link>
-
+                                    <Popover.Button>
                                     <Link href="/contact" className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         Contact
                                     </Link>
+                                    </Popover.Button>
                                     <Link href="/" className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         Company
                                     </Link>
