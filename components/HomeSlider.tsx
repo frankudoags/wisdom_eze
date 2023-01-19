@@ -24,7 +24,7 @@ const titles = [
 
 const HomeSlider = () => {
   return (
-    <div className='relative h-[90vh] md:h-[80vh] w-full flex justify-center items-center border-b border-[#251b1b]'>
+    <div className='relative h-[90vh] md:h-[80vh] w-full flex justify-center items-center border-b border-[#251b1b] font-inter'>
       <div className='hidden md:flex w-full h-full'>
         <Swiper
           slidesPerView={1}

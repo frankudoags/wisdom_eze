@@ -19,13 +19,13 @@ const Articles = () => {
                 </div>
             </div>
             {/* Youtube Videos */}
-            <p className='text-center uppercase text-2xl lg:text-4xl mt-16 md:mt-24 font-medium'>WATCH INSIGHTFUL VIDEOS</p>
+            <p className='text-center uppercase text-2xl lg:text-4xl mt-24 font-medium'>WATCH INSIGHTFUL VIDEOS</p>
             <p className='text-center uppercase text-sm md:text-base pb-10'>BUSINESS. INVESTMENT. PERSONAL GROWTH</p>
             <div>
                 <div className='flex flex-col md:flex-row lg:justify-center lg:items-center gap-4 md:gap-8 flex-wrap'>
-                    <Card title='THE TRUTH ABOUT THE UNBREAKABLE BUSINESS CHALLENGE' image={wisdom1} link='https://www.google.com' button='Youtube'/>
-                    <Card title='HOW TO BUILD AN INVINCIBLE LEGACY — STARTING TODAY' image={wisdom2} link='https://www.google.com' button='Youtube'/>
-                    <Card title='THE #1 SKILL THAT SUPERCHARGED MY SUCCESS' image={wisdom3} link='https://www.google.com' button='Youtube'/>
+                    <Card title='THE TRUTH ABOUT THE UNBREAKABLE BUSINESS CHALLENGE' image={wisdom1} link='https://www.google.com' button='Watch'/>
+                    <Card title='HOW TO BUILD AN INVINCIBLE LEGACY — STARTING TODAY' image={wisdom2} link='https://www.google.com' button='Watch'/>
+                    <Card title='THE #1 SKILL THAT SUPERCHARGED MY SUCCESS' image={wisdom3} link='https://www.google.com' button='Watch'/>
                 </div>
             </div>
         </div>
