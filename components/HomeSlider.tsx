@@ -15,7 +15,7 @@ const imagesLarge = [wisdom2, wisdom1, group]
 const imagesSmall = [wisdom4, wisdom3, wisdom2]
 
 const titles = [
-  'THE TRUTH ABOUT THE UNBREAKABLE BUSINESS CHALLENGE',
+  'SERIAL ENTREPRENEUR, CO-FOUNDER OF PERTINENCE GROUP, CEO OF RUSHTOWER, START-UP INVESTOR, INTERNATIONAL SPEAKER, BUSINESS ADVISOR & AUTHOR ',
   'HOW TO BUILD AN INVINCIBLE LEGACY — STARTING TODAY',
   'THE #1 SKILL THAT SUPERCHARGED MY SUCCESS',
   'THE TRUTH ABOUT THE UNBREAKABLE BUSINESS CHALLENGE'
@@ -82,9 +82,10 @@ const Slides = ({ title, image, link }: SlidesProps) => {
       {/* Overlay */}
       <div className='absolute inset-0 bg-black bg-opacity-20 -z-10'></div>
       {/* Title */}
-      <div className='flex flex-col justify-center items-center z-10 w-full h-full'>
+      <div className='flex flex-col justify-center items-center w-full h-full'>
           <h1 className='text-2xl md:text-4xl font-medium text-center text-white'>{title}</h1>
       </div>
+        {/* <p className='absolute inset-0 text-white text-xs'>Photo by <a href='https://unsplash.com/@joshuaearle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Joshua Earle</a> on <a href='https://unsplash.com/s/photos/wisdom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p> */}
     </div>
   )
 }
