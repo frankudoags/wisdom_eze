@@ -2,8 +2,8 @@ import React from 'react'
 
 const HomeSlider = () => {
   return (
-    <div className='min-h-screen flex justify-center items-center'>
-      Home
+    <div className='h-[70vh] flex justify-center items-center border-4'>
+      Home slide
     </div>
   )
 }
