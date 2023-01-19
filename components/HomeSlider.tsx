@@ -16,9 +16,8 @@ const imagesSmall = [wisdom4, wisdom3, wisdom2]
 
 const titles = [
   'SERIAL ENTREPRENEUR, CO-FOUNDER OF PERTINENCE GROUP, CEO OF RUSHTOWER, START-UP INVESTOR, INTERNATIONAL SPEAKER, BUSINESS ADVISOR & AUTHOR ',
-  'HOW TO BUILD AN INVINCIBLE LEGACY — STARTING TODAY',
-  'THE #1 SKILL THAT SUPERCHARGED MY SUCCESS',
-  'THE TRUTH ABOUT THE UNBREAKABLE BUSINESS CHALLENGE'
+  'LEARN HOW TO CREATE, MANAGE, AND MULTIPLY WEALTH FROM INDUSTRY EXPERTS ONCE A YEAR',
+  'JOIN A COMMUNITY OF ENTREPRENEURS AND BUSINESS EXECUTIVES 10X-ING THEIR PRODUCTIVITY AND WEALTH BY IMPLEMENTING KEY STRATEGIES EXPOUNDED BY WISDOM',
 ]
 
 
@@ -69,20 +68,20 @@ export default HomeSlider
 type SlidesProps = {
   title?: string;
   image: any;
-  link?: string;
 }
 
-const Slides = ({ title, image, link }: SlidesProps) => {
+const Slides = ({ title, image }: SlidesProps) => {
   return (
     <div className='relative w-full h-full'>
+      <h1 className="text-5xl text-white">HELLO</h1>
       {/* Image */}
       <div className='h-full w-full overflow-clip absolute inset-0 -z-10'>
         <Image src={image} alt='wisdom' priority placeholder='blur' className='h-full w-full object-center object-cover' />
       </div>
-      {/* Overlay */}
-      <div className='absolute inset-0 bg-black bg-opacity-20 -z-10'></div>
+      {/* Black overlay on image */}
+      <div className='h-full w-full bg-black opacity-40 absolute top-0 left-0 -z-10'></div>
       {/* Title */}
-      <div className='flex flex-col justify-center items-center w-full h-full'>
+      <div className='h-full w-full md:w-[70%] mx-auto p-4 text-[#ffffff] flex flex-col items-center justify-center gap-4 md:gap-12 z-10'>
           <h1 className='text-2xl md:text-4xl font-medium text-center text-white'>{title}</h1>
       </div>
         {/* <p className='absolute inset-0 text-white text-xs'>Photo by <a href='https://unsplash.com/@joshuaearle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Joshua Earle</a> on <a href='https://unsplash.com/s/photos/wisdom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p> */}
