@@ -21,9 +21,9 @@ const Articles = () => {
             <p className='text-center uppercase text-2xl lg:text-4xl mt-10 md:mt-24 pb-10 '>MOST RECENT VIDEOS</p>
             <div>
                 <div className='flex flex-col md:flex-row lg:justify-center lg:items-center gap-4 md:gap-8 flex-wrap'>
-                    <div className='w-80 h-80 md:w-96 md:h-96 bg-gray-200 md:rounded-lg'></div>
-                    <div className='w-80 h-80 md:w-96 md:h-96 bg-gray-200 md:rounded-lg'></div>
-                    <div className='w-80 h-80 md:w-96 md:h-96 bg-gray-200 md:rounded-lg'></div>
+                    <div className='w-full h-80 md:w-96 md:h-96 lg:h-[450px] bg-gray-200 md:rounded-lg'></div>
+                    <div className='w-full h-80 md:w-96 md:h-96 lg:h-[450px] bg-gray-200 md:rounded-lg'></div>
+                    <div className='w-full h-80 md:w-96 md:h-96 lg:h-[450px] bg-gray-200 md:rounded-lg'></div>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@ type Card1Props = {
 
 const Card = ({ title, image, link }: Card1Props) => {
     return (
-        <div className='relative w-full h-80 md:w-96 md:h-96 md:rounded-lg overflow-hidden group'>
+        <div className='relative w-full h-80 md:w-96 md:h-96 lg:h-[450px] md:rounded-lg overflow-hidden group'>
             <div className='h-full w-full overflow-clip absolute inset-0 -z-10'>
                 <Image src={image} alt='wisdom' priority placeholder='blur' className='h-full w-full object-center object-cover' />
             </div>

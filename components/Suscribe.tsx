@@ -4,7 +4,7 @@ import Button from './Button'
 
 const Suscribe = () => {
   return (
-      <div className='max-w-5xl mx-auto py-20 md:py-40 px-4'>
+      <div className='max-w-5xl mx-auto py-20 px-4'>
         <div className='flex flex-col items-center justify-center gap-4 md:gap-8'>
           <h1 className='text-2xl md:text-4xl font-medium text-center'>JOIN WISDOM&apos;S MENTORSHIP NETWORK</h1>
           <div>
