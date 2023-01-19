@@ -15,7 +15,7 @@ const Podcast = () => {
                     <Image src={wisdom} alt='wisdom' priority placeholder='blur' className='h-full w-full object-center object-cover' />
                 </div>
                 {/* Black overlay on image */}
-            <div className='h-full w-full bg-black opacity-40 trans absolute top-0 left-0 -z-10'></div>
+            <div className='h-full w-full bg-black opacity-70 trans absolute top-0 left-0 -z-10'></div>
             <div>
                 <div className='flex flex-col md:flex-row lg:justify-center lg:items-start gap-4 md:gap-8 flex-wrap'>
                     The Wisdom Ezekiel Podcast brand identity by the right pane.
