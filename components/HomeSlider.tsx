@@ -73,7 +73,6 @@ type SlidesProps = {
 const Slides = ({ title, image }: SlidesProps) => {
   return (
     <div className='relative w-full h-full'>
-      <h1 className="text-5xl text-white">HELLO</h1>
       {/* Image */}
       <div className='h-full w-full overflow-clip absolute inset-0 -z-10'>
         <Image src={image} alt='wisdom' priority placeholder='blur' className='h-full w-full object-center object-cover' />
