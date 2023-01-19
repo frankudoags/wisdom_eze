@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import wisdom1 from '../public/images/DSC01042.jpg'// seating across screen with glasses(large)
 import wisdom2 from '../public/images/DSC01196.jpg'//seating red shirt and tie(large and small)
-import group from '../public/images/DSC_0790.jpg'//group of people(large)
+import group from '../public/images/DSC00790.jpg'//group of people(large)
 import wisdom3 from '../public/images/DSC06975.jpg'//standing(small)
 import wisdom4 from '../public/images/DSC06914.jpg'//standing(small)
 import { Swiper, SwiperSlide } from "swiper/react";
