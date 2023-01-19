@@ -3,11 +3,31 @@ import Image from 'next/image'
 import wisdom1 from '../public/images/DSC01042.jpg'
 import wisdom2 from '../public/images/DSC01196.jpg'
 import wisdom3 from '../public/images/DSC06914.jpg'
+import { Swiper, SwiperSlide } from "swiper/react";
+// import { Pagination, Navigation } from "swiper";
+import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
+
+const images = [wisdom1, wisdom2, wisdom3]
 
 const HomeSlider = () => {
   return (
-    <div className='h-[80vh] w-full flex justify-center items-center border-b border-[#251b1b]'>
-      <Slides image={wisdom1} />
+    <div className='h-[90vh] w-full flex justify-center items-center border-b border-[#251b1b]'>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        navigation={true}
+        // modules={[Pagination, Navigation]}
+        className="mySwiper w-full h-full"
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <Slides image={image} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   )
 }

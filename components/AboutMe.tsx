@@ -13,7 +13,7 @@ const AboutMe = () => {
       </div>
       <div className='flex flex-col justify-between gap-16 md:gap-8 lg:flex-row w-full p-4'>
         {/* Image */}
-        <div className='w-2/3 lg:w-1/2 aspect-square  overflow-clip rounded-full md:rounded-lg mx-auto lg:mx-0'>
+        <div className='w-2/4 lg:w-1/2 aspect-square  overflow-clip rounded-full md:rounded-lg mx-auto lg:mx-0'>
           <Image src={wisdom} alt='Wisdom Ezekiel' priority placeholder='blur' />
         </div>
 
