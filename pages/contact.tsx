@@ -22,11 +22,12 @@ const Contact = () => {
 
   return (
     <div className='h-[90vh] flex flex-col items-center max-w-7xl mx-auto p-4'>
-      <h1 className='my-10'>Sign up as a mentee</h1>
+      <h1 className='mt-10 text-2xl font-medium'>Sign up as a mentee</h1>
+      <p className='mb-10 text-sm pt-2'>Fill out the form below to sign up as a mentee under Wisdom Ezekiel</p>
 
       <form className='flex flex-col space-y-4 w-full max-w-[400px] mx-auto' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-2 w-full'>
-            <label className='text-sm form-label' htmlFor='name'>Name</label>
+            <label className='text-sm form-label' htmlFor='name'>Full Name</label>
             <input type='text' name='name' id='name' className='form-input' placeholder='Enter your name' onChange={handleChange} value={formData.name}/>
         </div>
         <div className='flex flex-col gap-2 w-full'>
