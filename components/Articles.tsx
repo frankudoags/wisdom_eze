@@ -21,9 +21,9 @@ const Articles = () => {
             <p className='text-center uppercase text-2xl lg:text-4xl mt-10 md:mt-24 pb-10 '>MOST RECENT VIDEOS</p>
             <div>
                 <div className='flex flex-col md:flex-row lg:justify-center lg:items-center gap-4 md:gap-8 flex-wrap'>
-                    <div className='w-full h-80 md:w-96 md:h-96 lg:h-[450px] bg-gray-200 md:rounded-lg'></div>
-                    <div className='w-full h-80 md:w-96 md:h-96 lg:h-[450px] bg-gray-200 md:rounded-lg'></div>
-                    <div className='w-full h-80 md:w-96 md:h-96 lg:h-[450px] bg-gray-200 md:rounded-lg'></div>
+                    <Card title='THE TRUTH ABOUT THE UNBREAKABLE BUSINESS CHALLENGE' image={wisdom1} link='https://www.google.com' button='Youtube'/>
+                    <Card title='HOW TO BUILD AN INVINCIBLE LEGACY — STARTING TODAY' image={wisdom2} link='https://www.google.com' button='Youtube'/>
+                    <Card title='THE #1 SKILL THAT SUPERCHARGED MY SUCCESS' image={wisdom3} link='https://www.google.com' button='Youtube'/>
                 </div>
             </div>
         </div>
@@ -37,9 +37,10 @@ type Card1Props = {
     title: string;
     image: any;
     link: string;
+    button?: string;
 }
 
-const Card = ({ title, image, link }: Card1Props) => {
+const Card = ({ title, image, link, button }: Card1Props) => {
     return (
         <div className='relative w-full h-80 md:w-96 md:h-96 lg:h-[450px] md:rounded-lg overflow-hidden group'>
             <div className='h-full w-full overflow-clip absolute inset-0 -z-10'>
@@ -50,7 +51,7 @@ const Card = ({ title, image, link }: Card1Props) => {
             </div>
             <div className='h-full w-full md:w-[70%] mx-auto p-4 z-1 text-[#ffffff] flex flex-col items-center justify-center gap-4 md:gap-12'>
                 <p className='text-lg font-bold'>{title}</p>
-                <a href={link} target='_blank' rel='noreferrer' className='btn-white uppercase'>Read More</a>
+                <a href={link} target='_blank' rel='noreferrer' className='btn-white uppercase'>{button ? button : 'Read More'}</a>
             </div>
         </div>
     )
