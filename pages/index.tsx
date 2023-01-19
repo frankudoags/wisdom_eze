@@ -16,14 +16,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=''>
-        <Navbar />  {/* Done */}
         <HomeSlider />
         <AboutMe /> {/* Done */}
         <Articles />
         <Podcast />
         <Suscribe /> {/* Done */}
       </main>
-        <Footer /> {/* Done */}
     </>
   )
 }
