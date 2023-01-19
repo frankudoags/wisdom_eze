@@ -46,9 +46,12 @@ body{
 .form-input {
   @apply w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 focus:placeholder-gray-500;
 }
+.form-label{
+  @apply block font-medium text-gray-500;
+}
 .form-label::after{
   content: " *";
-  color: red;
+  color: #3b6ab6;
 }
 .nav {
   position: sticky;
