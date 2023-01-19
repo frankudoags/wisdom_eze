@@ -10,7 +10,7 @@ const Podcast = () => {
                 <p className='text-center uppercase text-sm md:text-base mb-10'>BUSINESS. INVESTMENT. PERSONAL GROWTH</p>
             </div>
             <div className='col-span-1 flex flex-col items-center justify-center'>
-                <div className='relative w-[1/2] h-[200px]  md:rounded-lg overflow-hidden group'>
+                <div className='relative w-[1/2] aspect-square  md:rounded-lg lg:rounded-full overflow-hidden group'>
                     <Image src={spotify} alt='wisdom' priority placeholder='blur' className='h-full w-full object-center object-cover' />
                 </div>
             </div>
