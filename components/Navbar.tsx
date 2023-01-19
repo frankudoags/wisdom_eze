@@ -10,7 +10,8 @@ import Link from 'next/link';
 
 export default function Navbar() {
     return (
-        <Popover className="relative bg-white border-b-2  max-w-7xl mx-auto nav">
+        <section className='bg-white nav'>
+        <Popover className="relative bg-white border-b-2  max-w-7xl mx-auto">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                 <div className="flex items-center justify-between py-6  md:space-x-10">
                     <div className="flex ">
@@ -110,6 +111,7 @@ export default function Navbar() {
                     </div>
                 </Popover.Panel>
             </Transition>
-        </Popover>
+        </Popover>  
+        </section>
     )
 }
