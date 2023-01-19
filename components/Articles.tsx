@@ -8,7 +8,8 @@ import wisdom3 from '../public/images/DSC06914.jpg'
 const Articles = () => {
     return (
         <div className='pt-20 sm:px-2'>
-            <p className='text-center uppercase text-2xl lg:text-4xl mb-10'>READ THOUGHT-PROVOKING ARTICLES</p>
+            <p className='text-center uppercase text-2xl lg:text-4xl mb-2 font-medium'>READ THOUGHT-PROVOKING ARTICLES</p>
+            <p className='text-center uppercase text-sm md:text-base mb-10'>BUSINESS. INVESTMENT. PERSONAL GROWTH</p>
 
             <div>
                 <div className='flex flex-col md:flex-row lg:justify-center lg:items-start gap-4 md:gap-8 flex-wrap'>
@@ -18,7 +19,8 @@ const Articles = () => {
                 </div>
             </div>
             {/* Youtube Videos */}
-            <p className='text-center uppercase text-2xl lg:text-4xl mt-10 md:mt-24 pb-10 '>MOST RECENT VIDEOS</p>
+            <p className='text-center uppercase text-2xl lg:text-4xl mt-16 md:mt-24 font-medium'>WATCH INSIGHTFUL VIDEOS</p>
+            <p className='text-center uppercase text-sm md:text-base pb-10'>BUSINESS. INVESTMENT. PERSONAL GROWTH</p>
             <div>
                 <div className='flex flex-col md:flex-row lg:justify-center lg:items-center gap-4 md:gap-8 flex-wrap'>
                     <Card title='THE TRUTH ABOUT THE UNBREAKABLE BUSINESS CHALLENGE' image={wisdom1} link='https://www.google.com' button='Youtube'/>
@@ -31,6 +33,10 @@ const Articles = () => {
 }
 
 export default Articles
+
+
+
+
 
 
 type Card1Props = {

@@ -15,7 +15,7 @@ const imagesLarge = [wisdom2, wisdom1, group]
 const imagesSmall = [wisdom4, wisdom3, wisdom2]
 
 const titles = [
-  'SERIAL ENTREPRENEUR, CO-FOUNDER OF PERTINENCE GROUP, CEO OF RUSHTOWER, START-UP INVESTOR, INTERNATIONAL SPEAKER, BUSINESS ADVISOR & AUTHOR ',
+  'MEET WISDOM, SERIAL ENTREPRENEUR, CO-FOUNDER OF PERTINENCE GROUP, CEO OF RUSHTOWER, START-UP INVESTOR, INTERNATIONAL SPEAKER, BUSINESS ADVISOR & AUTHOR ',
   'LEARN HOW TO CREATE, MANAGE, AND MULTIPLY WEALTH FROM INDUSTRY EXPERTS ONCE A YEAR',
   'JOIN A COMMUNITY OF ENTREPRENEURS AND BUSINESS EXECUTIVES 10X-ING THEIR PRODUCTIVITY AND WEALTH BY IMPLEMENTING KEY STRATEGIES EXPOUNDED BY WISDOM',
 ]
@@ -24,7 +24,7 @@ const titles = [
 
 const HomeSlider = () => {
   return (
-    <div className='relative h-[92vh] w-full flex justify-center items-center border-b border-[#251b1b]'>
+    <div className='relative h-[90vh] md:h-[80vh] w-full flex justify-center items-center border-b border-[#251b1b]'>
       <div className='hidden md:flex w-full h-full'>
         <Swiper
           slidesPerView={1}
@@ -37,7 +37,7 @@ const HomeSlider = () => {
         >
           {imagesLarge.map((image, index) => (
             <SwiperSlide key={index}>
-              <Slides image={image} />
+              <Slides image={image} title={titles[index]} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -66,7 +66,7 @@ const HomeSlider = () => {
 export default HomeSlider
 
 type SlidesProps = {
-  title?: string;
+  title: string;
   image: any;
 }
 
@@ -80,10 +80,9 @@ const Slides = ({ title, image }: SlidesProps) => {
       {/* Black overlay on image */}
       <div className='h-full w-full bg-black opacity-40 absolute top-0 left-0 -z-10'></div>
       {/* Title */}
-      <div className='h-full w-full md:w-[70%] mx-auto p-4 text-[#ffffff] flex flex-col items-center justify-center gap-4 md:gap-12 z-10'>
-          <h1 className='text-2xl md:text-4xl font-medium text-center text-white'>{title}</h1>
+      <div className='relative h-full w-full md:w-[70%] mx-auto p-4 text-[#ffffff] flex flex-col items-center justify-center'>
+          <h1 className='text-xl md:text-3xl font-medium text-center max-w-6xl absolute bottom-28'>{title}</h1>
       </div>
-        {/* <p className='absolute inset-0 text-white text-xs'>Photo by <a href='https://unsplash.com/@joshuaearle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Joshua Earle</a> on <a href='https://unsplash.com/s/photos/wisdom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p> */}
     </div>
   )
 }

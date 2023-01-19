@@ -14,7 +14,7 @@ export default function Navbar() {
         <Popover className="relative bg-white border-b-2  max-w-7xl mx-auto">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                 <div className="flex items-center justify-between py-4  md:space-x-10">
-                    <div className="flex ">
+                    <div className="flex">
                         <Link href="/">
                             <span className="sr-only">Your Company</span>
                             <p className='uppercase font-medium text-2xl text-[#12202f]'>Wisdom Ezekiel</p>
@@ -43,20 +43,20 @@ export default function Navbar() {
 
             <Transition
                 as={Fragment}
-                enter="duration-200 ease-out"
-                enterFrom="opacity-0 scale-95"
-                enterTo="opacity-100 scale-100"
-                leave="duration-100 ease-in"
-                leaveFrom="opacity-100 scale-100"
-                leaveTo="opacity-0 scale-95"
+                enter="duration-300 ease-out"
+                enterFrom="opacity-0 translate-y-0"
+                enterTo="opacity-100 translate-y-1"
+                leave="duration-300 ease-in"
+                leaveFrom="opacity-100 translate-y-1"
+                leaveTo="opacity-0 translate-y-0"
             >
-                <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
+                <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform transition md:hidden">
                     <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="px-5 pt-5 pb-6">
                             <div className="flex items-center justify-between">
                                 <div>
                                     <Link href="/">
-                                       <p>Home</p>
+                                    <p className='uppercase font-medium text-2xl text-[#12202f]'>Wisdom Ezekiel</p>
                                     </Link>
                                 </div>
                                 <div className="-mr-2">
@@ -89,12 +89,6 @@ export default function Navbar() {
                                 >
                                     Sign up
                                 </Link>
-                                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                                    Existing customer?{' '}
-                                    <Link href="/" className="text-gray-700 hover:text-gray-800">
-                                        Sign in
-                                    </Link>
-                                </p>
                             </div>
                         </div>
                     </div>

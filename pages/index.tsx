@@ -19,8 +19,8 @@ export default function Home() {
         <Navbar />  {/* Done */}
         <HomeSlider />
         <AboutMe /> {/* Done */}
-        <Articles />
         <Podcast />
+        <Articles />
         <Suscribe /> {/* Done */}
       </main>
         <Footer /> {/* Done */}
