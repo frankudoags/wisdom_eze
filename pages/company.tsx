@@ -27,12 +27,13 @@ const Company = () => {
                     <div className='mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                         {companies.map((company, index) => (
                             <div key={index} className='p-4'>
-                                <h1 className='text-xl font-bold pb-6'>{company.name}</h1>
                                 {company.image && (
-                                    <div className='relative w-full h-40'>
-                                        <Image src={company.image} alt={company.name} priority placeholder='blur' className='h-full w-full object-center object-cover' />
+                                    <div className='relative w-full h-40 bg-white pb-10'>
+                                        {/* Fit company image perfectly into this div */}
+                                        <Image src={company.image} placeholder='blur' priority className='w-full h-full object-contain' alt={company.name} />
                                     </div>
                                 )}
+                                <h1 className='text-xl font-bold py-6'>{company.name}</h1>
                                 <p className='text-sm'>{company.description}</p>
                             </div>
                         ))}
@@ -75,7 +76,7 @@ const companies: company[] = [
     {
         name: 'Rushtower Limited',
         description: 'Rushtower limited is a media company with two actively working subsidiaries in Redi Studios and Redrush Tv.',
-        // image: rushtower
+        image: hostnownow
     },
     {
         name: 'Quanta Africa',
