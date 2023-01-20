@@ -59,7 +59,7 @@ export default function Navbar() {
                     leaveTo="opacity-0 translate-y-0"
                 >
                     <Popover.Panel focus className="bg-[#07092e] text-white absolute inset-x-0 top-0 origin-top-right transform transition md:hidden border border-gray-400 rounded mx-2">
-                        <div className="divide-y-2 divide-gray-50 rounded-lg shadow-lg ">
+                        <div className="rounded-lg shadow-lg ">
                             <div className="px-5 pt-5">
                                 <div className="flex items-center justify-between">
                                     <div className='flex border border-transparent rounded-full overflow-hidden bg-white'>

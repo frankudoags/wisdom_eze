@@ -35,7 +35,7 @@ const about = () => {
                     </p>
 
 
-                    <p className="pb-10 font-bold">
+                    <p className="pb-10 font-bold md:text-xl">
                         “The problem with most people is that they are so concerned with BECOMING.
                         In order to BECOME, you must first BE and then DO. You can&apos;t miss the steps,
                         you just cannot cheat the process.”
