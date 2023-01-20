@@ -11,7 +11,7 @@ const about = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='bg-[#07092e] text-white min-h-[90vh] flex flex-col items-center'>
+            <div className='bg-[#0d0e18] text-white min-h-[90vh] flex flex-col items-center'>
                 <div className='relative w-full h-[350px] md:h-[400px] flex items-center justify-center'>
                     <Image src={wisdom2} alt='Wisdom Ezekiel' className='absolute object-cover object-center w-full h-full' />
                     {/* Black overlay on image */}

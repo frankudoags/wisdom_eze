@@ -17,7 +17,7 @@ const Stripe = () => {
 
 export default function Navbar() {
     return (
-        <section className='bg-[#07092e] text-white nav'>
+        <section className='bg-[#0d0e18] text-white nav'>
             <Stripe />
             <Popover className="relative max-w-7xl mx-auto">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -58,7 +58,7 @@ export default function Navbar() {
                     leaveFrom="opacity-100 translate-y-1"
                     leaveTo="opacity-0 translate-y-0"
                 >
-                    <Popover.Panel focus className="bg-[#07092e] text-white absolute inset-x-0 top-0 origin-top-right transform transition md:hidden border border-gray-400 rounded mx-2">
+                    <Popover.Panel focus className="bg-[#0d0e18] text-white absolute inset-x-0 top-0 origin-top-right transform transition md:hidden border border-gray-400 rounded mx-2">
                         <div className="rounded-lg shadow-lg ">
                             <div className="px-5 pt-5">
                                 <div className="flex items-center justify-between">

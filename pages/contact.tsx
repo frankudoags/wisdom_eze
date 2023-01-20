@@ -31,7 +31,7 @@ const Contact = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <section className='bg-[#07092e] text-white pt-4 h-[90vh] w-full flex flex-col md:flex-row justify-start items-center'>
+            <section className='bg-[#0d0e18] text-white pt-4 h-[90vh] w-full flex flex-col md:flex-row justify-start items-center'>
                 <div className='w-0 h-0 md:w-[50%] md:h-full hidden md:flex'>
                     <Image src={wisdom2} alt='Wisdom Ezekiel' className='object-cover object-center w-full h-full' />
                 </div>
