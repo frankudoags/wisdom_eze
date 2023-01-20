@@ -28,7 +28,7 @@ const about = () => {
                         business advisor, early stage investor, and philanthropist with over two
                         decades of experience. He, alongside his business partner built their multimillion dollar
                         real estate company from scratch defying all odds set before them. </p>
-                    <p className="pb-10">
+                    <p className="pb-20">
                         Wisdom co-owns and operates seven companies under the umbrella of Pertinence Group
                         and he is an early stage investor in the start-up face with co-founding and funding
                         companies such as Quanta Africa which is on a mission to transform Africa through innovation.
