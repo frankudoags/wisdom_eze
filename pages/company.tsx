@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
-import datafest from '../public/images/datafest.png'
+import datafest from '../public/images/datafest.jpg'
 import pertinence from '../public/images/pertinence.jpg'
 import realvest from '../public/images/realvest.jpg'
 // import rushtower from '../public/images/rushtower.png'
