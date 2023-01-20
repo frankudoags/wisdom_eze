@@ -1,5 +1,13 @@
 import Head from 'next/head'
+import Image, { StaticImageData } from 'next/image'
 import React from 'react'
+import datafest from '../public/images/datafest.png'
+import pertinence from '../public/images/pertinence.jpg'
+import realvest from '../public/images/realvest.jpg'
+// import rushtower from '../public/images/rushtower.png'
+import quanta from '../public/images/quanta.jpg'
+import hostnownow from '../public/images/hostnownow.jpg'
+
 
 const Company = () => {
     return (
@@ -13,13 +21,18 @@ const Company = () => {
             <section className='bg-[#0d0e18] text-white'>
                 <div className='min-h-screen max-w-7xl mx-auto'>
                     <h1 className='mr-auto md:mr-none text-center text-3xl font-bold pt-4 md:pt-8'>Company</h1>
-                    <p className='mr-auto md:mr-none text-center pt-2 md:pt-4'>   
-                    Some of the companies I have worked with
+                    <p className='mr-auto md:mr-none text-center pt-2 md:pt-4'>
+                        Some of the companies I have worked with
                     </p>
                     <div className='mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                         {companies.map((company, index) => (
                             <div key={index} className='p-4'>
                                 <h1 className='text-xl font-bold pb-6'>{company.name}</h1>
+                                {company.image && (
+                                    <div className='relative w-full h-40'>
+                                        <Image src={company.image} alt={company.name} priority placeholder='blur' className='h-full w-full object-center object-cover' />
+                                    </div>
+                                )}
                                 <p className='text-sm'>{company.description}</p>
                             </div>
                         ))}
@@ -32,32 +45,42 @@ const Company = () => {
 
 export default Company
 
+interface company {
+    name: string
+    description: string
+    image?: StaticImageData
+}
 
-
-const companies = [
+const companies: company[] = [
     {
         name: 'Pertinence Properties',
-        description: 'Pertinence Properties provides you excellent products and services in areas such as Land and House ownership, Rent, Construction, Property Management, and more With a team of 13,000+ realtors, 15,000+ client base, 63 estate projects, 8 office locations; with presence in the United Kingdom, Canada, and the United Arab Emirates'
+        description: 'Pertinence Properties provides you excellent products and services in areas such as Land and House ownership, Rent, Construction, Property Management, and more With a team of 13,000+ realtors, 15,000+ client base, 63 estate projects, 8 office locations; with presence in the United Kingdom, Canada, and the United Arab Emirates',
+        image: pertinence,
     },
     {
         name: 'RealVest',
-        description: 'Traditionally, real estate investment has been restricted to a limited class with a high entry barrier. However, with RealVest, everyone can now enjoy secured returns on real estate investment. RealVest provides a digitally accessible real estate investment solution, RealVest is taking the lead in providing investment plans for all caliber of people for shared prosperity.'
+        description: 'Traditionally, real estate investment has been restricted to a limited class with a high entry barrier. However, with RealVest, everyone can now enjoy secured returns on real estate investment. RealVest provides a digitally accessible real estate investment solution, RealVest is taking the lead in providing investment plans for all caliber of people for shared prosperity.',
+        image: realvest
     },
     {
         name: 'DataFirst Technologies',
-        description: 'DataFirst Technologies Ltd is on a mission to build a formidable engineering team capable enough to empower individuals and grow businesses by developing quality technological solutions. We are committed to continuous learning in order to consistently solve problems and provide excellent customer satisfaction with world class technological solutions.'
+        description: 'DataFirst Technologies Ltd is on a mission to build a formidable engineering team capable enough to empower individuals and grow businesses by developing quality technological solutions. We are committed to continuous learning in order to consistently solve problems and provide excellent customer satisfaction with world class technological solutions.',
+        image: datafest
     },
     {
         name: 'HostNowNow',
-        description: 'HostNowNow is one of Nigeria’s fastest growing web hosting, domain registry, and server management companies. Committed to making web hosting and domain registration affordable and accessible to businesses and individuals of all sizes.'
+        description: 'HostNowNow is one of Nigeria’s fastest growing web hosting, domain registry, and server management companies. Committed to making web hosting and domain registration affordable and accessible to businesses and individuals of all sizes.',
+        image: hostnownow
     },
     {
         name: 'Rushtower Limited',
-        description: 'Rushtower limited is a media company with two actively working subsidiaries in Redi Studios and Redrush Tv.'
+        description: 'Rushtower limited is a media company with two actively working subsidiaries in Redi Studios and Redrush Tv.',
+        // image: rushtower
     },
     {
         name: 'Quanta Africa',
-        description: 'Quanta is on a mission to transform Africa through innovation, people empowerment, and enterprise development — smartly addressing challenges impeding the economic growth of the continent.'
+        description: 'Quanta is on a mission to transform Africa through innovation, people empowerment, and enterprise development — smartly addressing challenges impeding the economic growth of the continent.',
+        image: quanta
     },
 
 ]

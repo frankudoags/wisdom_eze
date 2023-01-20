@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import wisdom1 from '../public/images/DSC01042.jpg'// seating across screen with glasses(large)
 import wisdom2 from '../public/images/DSC01196.jpg'//seating red shirt and tie(large and small)
 import group from '../public/images/DSC00790.jpg'//group of people(large)
@@ -67,7 +67,7 @@ export default HomeSlider
 
 type SlidesProps = {
   title: string;
-  image: any;
+  image: StaticImageData;
 }
 
 const Slides = ({ title, image }: SlidesProps) => {
