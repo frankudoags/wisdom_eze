@@ -9,7 +9,7 @@ const Stripe = () => {
     return (
         <div className=' w-full text-white bg-black text-xs py-2  border-b-[0.4px] border-gray-400'>
             <div className="max-w-7xl mx-auto">
-                <p>+234 807 574 4557 | wisdomaezekiel@gmail.com</p>
+                <p className='px-4'>+234 807 574 4557 | wisdomaezekiel@gmail.com</p>
             </div>
         </div>
     )
@@ -81,13 +81,19 @@ export default function Navbar() {
                             <div className="space-y-6 py-6 px-5">
                                 <div className="flex flex-col  gap-6">
                                     <Link href="/about" className="text-base font-medium text-gray-200 hover:text-gray-200">
+                                        <Popover.Button>
                                         About Wisdom
+                                        </Popover.Button>
                                     </Link>
                                     <Link href="/" className="text-base font-medium text-gray-200 hover:text-gray-200">
+                                        <Popover.Button>
                                         Company
+                                        </Popover.Button>
                                     </Link>
                                     <Link href="/contact" className="text-base font-medium text-gray-200 hover:text-gray-200">
+                                        <Popover.Button>
                                         Contact
+                                        </Popover.Button>
                                     </Link>
                                 </div>
                                 <div>
