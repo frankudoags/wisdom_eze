@@ -31,13 +31,13 @@ const Contact = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <section className='h-[90vh] w-full flex flex-col md:flex-row justify-start items-center'>
+            <section className='bg-[#07092e] text-white pt-4 h-[90vh] w-full flex flex-col md:flex-row justify-start items-center'>
                 <div className='w-0 h-0 md:w-[50%] md:h-full hidden md:flex'>
                     <Image src={wisdom2} alt='Wisdom Ezekiel' className='object-cover object-center w-full h-full' />
                 </div>
                 <div className='flex flex-col justify center items-center w-full md:w-[50%] p-4'>
                     <h1 className='mt-10 text-2xl font-medium'>Sign up as a mentee</h1>
-                    <p className='mb-10 text-sm pt-2'>Fill out the form below to sign up as a mentee under Wisdom Ezekiel</p>
+                    <p className='mb-10 text-sm pt-2 text-center'>Fill out the form below to sign up as a mentee under Wisdom Ezekiel</p>
 
                     {/* Form */}
                     <form className='flex flex-col space-y-4 w-full max-w-[500px] mx-auto' onSubmit={handleSubmit}>

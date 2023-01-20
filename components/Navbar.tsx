@@ -7,9 +7,9 @@ import Logo from '../public/images/fav.png'
 
 const Stripe = () => {
     return (
-        <div className=' w-full text-white bg-black text-xs py-2'>
+        <div className=' w-full text-white bg-black text-xs py-2  border-b-[0.4px] border-gray-400'>
             <div className="max-w-7xl mx-auto">
-                +234 807 574 4557 | wisdomaezekiel@gmail.com
+                <p>+234 807 574 4557 | wisdomaezekiel@gmail.com</p>
             </div>
         </div>
     )
@@ -25,7 +25,7 @@ export default function Navbar() {
                         <div className="flex border border-transparent rounded-full overflow-hidden bg-white">
                             <Link href="/">
                                 <span className="sr-only">Wisdom Ezekiel</span>
-                                <Image src={Logo} alt='wisdom' priority placeholder='blur' className='h-12 w-12 object-center object-cover' />
+                                <Image src={Logo} alt='wisdom' priority placeholder='blur' className='h-10 w-10 object-center object-cover' />
                             </Link>
                         </div>
                         <Popover.Group as="nav" className="hidden space-x-10 md:flex">
@@ -41,9 +41,9 @@ export default function Navbar() {
 
                         </Popover.Group>
                         <div className="-my-2 -mr-2 md:hidden">
-                            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
+                            <Popover.Button className="inline-flex items-center justify-center rounded-md  p-2 text-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
                                 <span className="sr-only">Open menu</span>
-                                <Bars3Icon className="h-8 w-8 text-black" aria-hidden="true" />
+                                <Bars3Icon className="h-8 w-8 text-gray-200" aria-hidden="true" />
                             </Popover.Button>
                         </div>
                     </div>
@@ -58,20 +58,20 @@ export default function Navbar() {
                     leaveFrom="opacity-100 translate-y-1"
                     leaveTo="opacity-0 translate-y-0"
                 >
-                    <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform transition md:hidden">
-                        <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ">
+                    <Popover.Panel focus className="bg-[#07092e] text-white absolute inset-x-0 top-0 origin-top-right transform transition md:hidden border border-gray-400 rounded mx-2">
+                        <div className="divide-y-2 divide-gray-50 rounded-lg shadow-lg ">
                             <div className="px-5 pt-5">
                                 <div className="flex items-center justify-between">
-                                    <div>
+                                    <div className='flex border border-transparent rounded-full overflow-hidden bg-white'>
                                         <Link href="/">
                                             <span className="sr-only">Wisdom Ezekiel</span>
                                             <Image src={Logo} alt='wisdom' priority placeholder='blur' className='h-10 w-10 object-center object-cover' />
                                         </Link>
                                     </div>
                                     <div className="-mr-2">
-                                        <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
+                                        <Popover.Button className="inline-flex items-center justify-center rounded-full p-2 text-gray-200">
                                             <span className="sr-only">Close menu</span>
-                                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                                            <XMarkIcon className="h-8 w-8" aria-hidden="true" />
                                         </Popover.Button>
                                     </div>
                                 </div>
@@ -92,8 +92,8 @@ export default function Navbar() {
                                 </div>
                                 <div>
                                     <Link
-                                        href="/"
-                                        className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-900"
+                                        href="/contact"
+                                        className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-base font-medium text-gray-900 shadow-sm hover:bg-gray-900"
                                     >
                                         Sign up
                                     </Link>
