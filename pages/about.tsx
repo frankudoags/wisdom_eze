@@ -11,8 +11,8 @@ const about = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='h-[90vh] flex flex-col items-center'>
-                <div className='relative w-full h-[50%] flex items-center justify-center'>
+            <div className='min-h-[90vh] flex flex-col items-center'>
+                <div className='relative w-full h-[350px] md:h-[400px] flex items-center justify-center'>
                     <Image src={wisdom2} alt='Wisdom Ezekiel' className='absolute object-cover object-center w-full h-full' />
                     {/* Black overlay on image */}
                     <div className='h-full w-full bg-black opacity-40 absolute top-0 left-0'></div>
@@ -32,6 +32,16 @@ const about = () => {
                         Wisdom co-owns and operates seven companies under the umbrella of Pertinence Group
                         and he is an early stage investor in the start-up face with co-founding and funding
                         companies such as Quanta Africa which is on a mission to transform Africa through innovation.
+                    </p>
+
+
+                    <p className="pb-10 font-bold">
+                        “The problem with most people is that they are so concerned with BECOMING.
+                        In order to BECOME, you must first BE and then DO. You can&apos;t miss the steps,
+                        you just cannot cheat the process.”
+                    </p>
+                    <p className="pb-10 font-bold">
+                        - Wisdom Ezekiel
                     </p>
                 </div>
             </div>
