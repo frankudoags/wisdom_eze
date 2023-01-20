@@ -22,7 +22,7 @@ const Company = () => {
                 <div className='min-h-screen max-w-7xl mx-auto'>
                     <h1 className='mr-auto md:mr-none text-center text-3xl font-bold pt-4 md:pt-8'>Company</h1>
                     <p className='mr-auto md:mr-none text-center pt-2 md:pt-4'>
-                        Some of the companies I have worked with
+                        Some of the companies I have worked with and cofounded
                     </p>
                     <div className='mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                         {companies.map((company, index) => (
