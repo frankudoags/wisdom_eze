@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import { AboutMe, Articles, Footer, HomeSlider, Navbar, Podcast, Suscribe } from '@/components'
+import { AboutMe, Articles, BuyBook, Footer, HomeSlider, Navbar, Podcast, Suscribe } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +20,7 @@ export default function Home() {
         <AboutMe /> {/* Done */}
         <Articles />
         <Podcast />
+        <BuyBook />
         <Suscribe /> {/* Done */}
       </main>
     </>
