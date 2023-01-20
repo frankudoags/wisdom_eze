@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react'
-import wisdom2 from '../public/images/DSC01196.jpg'//seating red shirt and tie(large and small)
+import wisdom2 from '../public/images/DSC01039.jpg'
 
 const Contact = () => {
     const [formData, setFormData] = React.useState({
