@@ -29,7 +29,7 @@ export default function Navbar() {
                             </Link>
                         </div>
                         <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-                            <Link href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                            <Link href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900">
                                 About Wisdom
                             </Link>
                             <Link href="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900">
@@ -79,17 +79,15 @@ export default function Navbar() {
                                 </div>
                             </div>
                             <div className="space-y-6 py-6 px-5">
-                                <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                                    <Link href="/" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                <div className="flex flex-col  gap-6">
+                                    <Link href="/about" className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         About Wisdom
                                     </Link>
-                                    <Popover.Button>
-                                    <Link href="/contact" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                                        Contact
-                                    </Link>
-                                    </Popover.Button>
                                     <Link href="/" className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         Company
+                                    </Link>
+                                    <Link href="/contact" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                        Contact
                                     </Link>
                                 </div>
                                 <div>
