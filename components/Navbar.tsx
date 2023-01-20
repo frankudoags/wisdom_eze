@@ -35,7 +35,7 @@ export default function Navbar() {
                             <Link href="/contact" className="text-base font-medium text-gray-200 hover:text-gray-400">
                                 Contact
                             </Link>
-                            <Link href="/" className="text-base font-medium text-gray-200 hover:text-gray-400">
+                            <Link href="/company" className="text-base font-medium text-gray-200 hover:text-gray-400">
                                 Company
                             </Link>
 
@@ -64,8 +64,10 @@ export default function Navbar() {
                                 <div className="flex items-center justify-between">
                                     <div className='flex border border-transparent rounded-full overflow-hidden bg-white'>
                                         <Link href="/">
+                                            <Popover.Button className='flex border border-transparent rounded-full overflow-hidden bg-white'>
                                             <span className="sr-only">Wisdom Ezekiel</span>
                                             <Image src={Logo} alt='wisdom' priority placeholder='blur' className='h-10 w-10 object-center object-cover' />
+                                            </Popover.Button>
                                         </Link>
                                     </div>
                                     <div className="-mr-2">
@@ -82,26 +84,28 @@ export default function Navbar() {
                                 <div className="flex flex-col  gap-6">
                                     <Link href="/about" className="text-base font-medium text-gray-200 hover:text-gray-200">
                                         <Popover.Button>
-                                        About Wisdom
+                                            About Wisdom
                                         </Popover.Button>
                                     </Link>
-                                    <Link href="/" className="text-base font-medium text-gray-200 hover:text-gray-200">
+                                    <Link href="/company" className="text-base font-medium text-gray-200 hover:text-gray-200">
                                         <Popover.Button>
-                                        Company
+                                            Company
                                         </Popover.Button>
                                     </Link>
                                     <Link href="/contact" className="text-base font-medium text-gray-200 hover:text-gray-200">
                                         <Popover.Button>
-                                        Contact
+                                            Contact
                                         </Popover.Button>
                                     </Link>
                                 </div>
                                 <div>
                                     <Link
                                         href="/contact"
-                                        className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-base font-medium text-gray-900 shadow-sm hover:bg-gray-900"
+                                        className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-base font-medium text-gray-900"
                                     >
-                                        Sign up
+                                        <Popover.Button>
+                                            Sign up
+                                        </Popover.Button>
                                     </Link>
                                 </div>
                             </div>
