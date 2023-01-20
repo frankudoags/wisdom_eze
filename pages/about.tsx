@@ -11,14 +11,14 @@ const about = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='min-h-[90vh] flex flex-col items-center'>
+            <div className='bg-[#07092e] text-white min-h-[90vh] flex flex-col items-center'>
                 <div className='relative w-full h-[350px] md:h-[400px] flex items-center justify-center'>
                     <Image src={wisdom2} alt='Wisdom Ezekiel' className='absolute object-cover object-center w-full h-full' />
                     {/* Black overlay on image */}
                     <div className='h-full w-full bg-black opacity-40 absolute top-0 left-0'></div>
                     <h1 className='z-10 text-white text-2xl md:text-3xl'>MEET WISDOM</h1>
                 </div>
-                <div className='w-full flex flex-col items-center justify-center max-w-4xl mx-auto mt-10 md:mt-12 px-4'>
+                <div className='w-full flex flex-col items-center justify-center max-w-4xl mx-auto mt-10 md:mt-12 px-4 border-b border-white'>
                     <p className="pb-10">
                         Co-founder of Pertinence Group, CEO of Rushtower Limited,
                         international speaker, serial entrepreneur, business advisor

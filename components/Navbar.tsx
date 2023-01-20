@@ -17,31 +17,31 @@ const Stripe = () => {
 
 export default function Navbar() {
     return (
-        <section className='bg-white nav'>
+        <section className='bg-[#07092e] text-white nav'>
             <Stripe />
-            <Popover className="relative border-b  max-w-7xl mx-auto">
+            <Popover className="relative max-w-7xl mx-auto">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6">
                     <div className="flex items-center justify-between py-2 md:space-x-10">
-                        <div className="flex">
+                        <div className="flex border border-transparent rounded-full overflow-hidden bg-white">
                             <Link href="/">
                                 <span className="sr-only">Wisdom Ezekiel</span>
                                 <Image src={Logo} alt='wisdom' priority placeholder='blur' className='h-12 w-12 object-center object-cover' />
                             </Link>
                         </div>
                         <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-                            <Link href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                            <Link href="/about" className="text-base font-medium text-gray-200 hover:text-gray-400">
                                 About Wisdom
                             </Link>
-                            <Link href="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                            <Link href="/contact" className="text-base font-medium text-gray-200 hover:text-gray-400">
                                 Contact
                             </Link>
-                            <Link href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                            <Link href="/" className="text-base font-medium text-gray-200 hover:text-gray-400">
                                 Company
                             </Link>
 
                         </Popover.Group>
                         <div className="-my-2 -mr-2 md:hidden">
-                            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
+                            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
                                 <span className="sr-only">Open menu</span>
                                 <Bars3Icon className="h-8 w-8 text-black" aria-hidden="true" />
                             </Popover.Button>
@@ -69,7 +69,7 @@ export default function Navbar() {
                                         </Link>
                                     </div>
                                     <div className="-mr-2">
-                                        <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
+                                        <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
                                             <span className="sr-only">Close menu</span>
                                             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                                         </Popover.Button>
@@ -80,13 +80,13 @@ export default function Navbar() {
                             </div>
                             <div className="space-y-6 py-6 px-5">
                                 <div className="flex flex-col  gap-6">
-                                    <Link href="/about" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    <Link href="/about" className="text-base font-medium text-gray-200 hover:text-gray-200">
                                         About Wisdom
                                     </Link>
-                                    <Link href="/" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    <Link href="/" className="text-base font-medium text-gray-200 hover:text-gray-200">
                                         Company
                                     </Link>
-                                    <Link href="/contact" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    <Link href="/contact" className="text-base font-medium text-gray-200 hover:text-gray-200">
                                         Contact
                                     </Link>
                                 </div>
