@@ -9,7 +9,7 @@ const AboutMe = () => {
     <section className='bg-[#0d0e18] text-white pb-8'>
     <div className='max-w-5xl mx-auto'>
       <div className='py-10 flex flex-col gap-4 lg:flex-row justify-between items-center px-4 md:px-0'>
-        <h1 className='text-xl md:text-2xl font-medium text-center'>GET BITE-SIZED BUSINESS AND INVESTMENT TIPS IN YOUR INBOX</h1>
+        <h1 className='text-xl md:text-2xl font-medium text-center'>GET BIT-SIZED BUSINESS AND INVESTMENT TIPS IN YOUR INBOX</h1>
         <Button text='SIGN UP' path='/contact' />
       </div>
       <div className='flex flex-col justify-between gap-8 lg:flex-row w-full py-4 px-8 md:px-4'>

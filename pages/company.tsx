@@ -74,11 +74,6 @@ const companies: company[] = [
         image: hostnownow
     },
     {
-        name: 'Rushtower Limited',
-        description: 'Rushtower limited is a media company with two actively working subsidiaries in Redi Studios and Redrush Tv.',
-        image: hostnownow
-    },
-    {
         name: 'Quanta Africa',
         description: 'Quanta is on a mission to transform Africa through innovation, people empowerment, and enterprise development — smartly addressing challenges impeding the economic growth of the continent.',
         image: quanta

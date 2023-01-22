@@ -36,7 +36,7 @@ export default function Navbar() {
                                 Contact
                             </Link>
                             <Link href="/company" className="text-base font-medium text-gray-200 hover:text-gray-400">
-                                Company
+                                The Pertinence Way
                             </Link>
 
                         </Popover.Group>
@@ -65,8 +65,8 @@ export default function Navbar() {
                                     <div className='flex border border-transparent rounded-full overflow-hidden bg-white'>
                                         <Link href="/">
                                             <Popover.Button className='flex border border-transparent rounded-full overflow-hidden bg-white'>
-                                            <span className="sr-only">Wisdom Ezekiel</span>
-                                            <Image src={Logo} alt='wisdom' priority placeholder='blur' className='h-10 w-10 object-center object-cover' />
+                                                <span className="sr-only">Wisdom Ezekiel</span>
+                                                <Image src={Logo} alt='wisdom' priority placeholder='blur' className='h-10 w-10 object-center object-cover' />
                                             </Popover.Button>
                                         </Link>
                                     </div>
@@ -89,7 +89,7 @@ export default function Navbar() {
                                     </Link>
                                     <Link href="/company" className="text-base font-medium text-gray-200 hover:text-gray-200">
                                         <Popover.Button>
-                                            Company
+                                            The Pertinence Way
                                         </Popover.Button>
                                     </Link>
                                     <Link href="/contact" className="text-base font-medium text-gray-200 hover:text-gray-200">
