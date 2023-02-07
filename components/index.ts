@@ -6,3 +6,4 @@ export { default as AboutMe } from './AboutMe';
 export { default as Articles } from './Articles';
 export { default as Podcast } from './Podcast';
 export { default as BuyBook } from './BuyBook';
+export { default as Testimonials } from './Testimonials';
