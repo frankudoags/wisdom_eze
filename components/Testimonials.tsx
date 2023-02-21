@@ -15,7 +15,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center gap-4 md:gap-6 px-4 py-8 bg-slate-200 rounded-md h-full"
+            className="flex flex-col items-center justify-center gap-4 md:gap-6 px-4 py-8 bg-slate-100 rounded-md h-full"
           >
             <p className="text-start">{testimonial.testimony}</p>
             <div className="flex flex-col items-center justify-center gap-2">
